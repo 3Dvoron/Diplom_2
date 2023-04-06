@@ -14,7 +14,7 @@ public class BurgerRestClient {
     protected static final String CREATE_ORDER_URI = BASE_URI + "orders";
     protected static final String ORDER_ALL_URI = CREATE_ORDER_URI + "/all";
     protected static final String INGREDIENTS_URI = BASE_URI + "ingredients";
-    Faker faker = new Faker();
+
 
     protected RequestSpecification getBaseReqSpec() {
         return new RequestSpecBuilder()
@@ -23,6 +23,7 @@ public class BurgerRestClient {
                 .build();
     }
 
+    Faker faker = new Faker();
     public String getRandomName() {
         return faker.name().firstName();
     }

@@ -24,7 +24,7 @@ public class CreateAccountTest extends BurgerRestClient {
         boolean isUserCreated = createResponse.extract().path("success");
         userToken = createResponse.extract().path("accessToken");
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue("Model.Courier is not created", isUserCreated);
+        assertTrue("User is not created", isUserCreated);
     }
 
     @Test

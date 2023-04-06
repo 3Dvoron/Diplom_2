@@ -41,7 +41,7 @@ public class OrderTest extends BurgerRestClient {
         boolean ingredientList = response.extract().path("success");
         int statusCode = response.extract().statusCode();
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue(ingredientList);
+        assertTrue("Success false", ingredientList);
     }
 
     @Test
@@ -51,7 +51,7 @@ public class OrderTest extends BurgerRestClient {
         boolean orderStatus = response.extract().path("success");
         int statusCode = response.extract().statusCode();
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue(orderStatus);
+        assertTrue("Success false", orderStatus);
     }
 
     @Test
@@ -61,7 +61,7 @@ public class OrderTest extends BurgerRestClient {
         boolean orderStatus = response.extract().path("success");
         int statusCode = response.extract().statusCode();
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue(orderStatus);
+        assertTrue("Success false", orderStatus);
     }
 
     @Test
@@ -91,7 +91,7 @@ public class OrderTest extends BurgerRestClient {
         boolean orderStatus = response.extract().path("success");
         int statusCode = response.extract().statusCode();
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue(orderStatus);
+        assertTrue("Success false", orderStatus);
     }
 
     @Test
@@ -102,7 +102,7 @@ public class OrderTest extends BurgerRestClient {
         boolean orderStatus = response.extract().path("success");
         int statusCode = response.extract().statusCode();
         assertEquals("Status code is incorrect", HTTP_OK, statusCode);
-        assertTrue(orderStatus);
+        assertTrue("Success false", orderStatus);
     }
 
     @After
