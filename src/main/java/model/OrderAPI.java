@@ -8,7 +8,7 @@ import util.BurgerRestClient;
 import java.util.HashMap;
 import java.util.List;
 
-public class Order extends BurgerRestClient {
+public class OrderAPI extends BurgerRestClient {
 
     @Step("Create order")
     public ValidatableResponse createOrder(HashMap<String, List<String>> ingredients) {

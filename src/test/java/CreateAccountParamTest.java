@@ -1,6 +1,6 @@
 import io.qameta.allure.Description;
 import io.restassured.response.ValidatableResponse;
-import model.User;
+import model.UserAPI;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -12,7 +12,7 @@ import static org.junit.Assert.assertFalse;
 
 @RunWith(Parameterized.class)
 public class CreateAccountParamTest extends BurgerRestClient {
-    User user = new User();
+    UserAPI userAPI = new UserAPI();
     private String email;
     private String password;
     private String name;
@@ -35,10 +35,10 @@ public class CreateAccountParamTest extends BurgerRestClient {
     @Test
     @Description("Этот тест проверяет что можно создать пользователя проверяет статус код и ответ")
     public void createUser() {
-        ValidatableResponse createResponse = user.createUser(email, password, name);
+        ValidatableResponse createResponse = userAPI.createUser(email, password, name);
         int statusCode = createResponse.extract().statusCode();
         boolean isUserCreated = createResponse.extract().path("success");
         assertEquals("Status code is incorrect", HTTP_FORBIDDEN, statusCode);
-        assertFalse("User is not created", isUserCreated);
+        assertFalse("UserAPI is not created", isUserCreated);
     }
 }

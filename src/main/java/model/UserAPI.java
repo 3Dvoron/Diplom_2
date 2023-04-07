@@ -6,7 +6,7 @@ import io.restassured.response.ValidatableResponse;
 import pojo.UserField;
 import util.BurgerRestClient;
 
-public class User extends BurgerRestClient {
+public class UserAPI extends BurgerRestClient {
 
     @Step("Create user")
     public ValidatableResponse createUser(String email, String password, String name) {
