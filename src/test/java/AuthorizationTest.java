@@ -11,7 +11,7 @@ import static java.net.HttpURLConnection.HTTP_OK;
 import static java.net.HttpURLConnection.HTTP_UNAUTHORIZED;
 import static org.junit.Assert.*;
 
-public class AuthorizationTest extends BurgerRestClient {
+public class AuthorizationTest {
 
     private String userToken;
     UserAPI userAPI = new UserAPI();

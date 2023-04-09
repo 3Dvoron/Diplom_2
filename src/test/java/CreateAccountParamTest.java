@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 @RunWith(Parameterized.class)
-public class CreateAccountParamTest extends BurgerRestClient {
+public class CreateAccountParamTest {
     UserAPI userAPI = new UserAPI();
     private String email;
     private String password;

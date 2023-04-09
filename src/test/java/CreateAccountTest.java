@@ -10,7 +10,7 @@ import static java.net.HttpURLConnection.HTTP_FORBIDDEN;
 import static java.net.HttpURLConnection.HTTP_OK;
 import static org.junit.Assert.*;
 
-public class CreateAccountTest extends BurgerRestClient {
+public class CreateAccountTest {
     private String userToken;
     UserAPI userAPI = new UserAPI();
     GenerateRandomData randomData = new GenerateRandomData();

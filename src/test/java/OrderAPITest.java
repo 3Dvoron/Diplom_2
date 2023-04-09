@@ -15,7 +15,7 @@ import static java.net.HttpURLConnection.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class OrderAPITest extends BurgerRestClient {
+public class OrderAPITest {
 
     private String userToken;
     protected List<String> ingredients;

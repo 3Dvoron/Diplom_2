@@ -14,7 +14,7 @@ import static java.net.HttpURLConnection.HTTP_UNAUTHORIZED;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class UpdateUserInformationParamTestAPI extends BurgerRestClient {
+public class UpdateUserInformationParamTestAPI {
     private String userToken;
     UserAPI userAPI = new UserAPI();
     private String newEmail;
